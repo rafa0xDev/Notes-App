@@ -1,5 +1,131 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container-header {
+    background: linear-gradient(to top, #fff, #d2e4f0);
+    padding: 20px;
+    border-radius: 0 0 0 40px;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.title p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.notification-icon {
+    position: relative;
+    font-size: 24px;
+    color: #666;
+}
+
+.notification-icon ion-icon {
+    font-size: 28px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    left: 15px;
+    color: #999;
+    font-size: 20px;
+}
+
+.nav-category ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.nav-category a {
+    text-decoration: none;
+    color: #999;
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-category a:hover,
+.nav-category li:first-child a {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bottom-nav a {
+  color: #888;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.add-btn {
+  position: relative;
+  top: -20px;
+  background: skyblue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+.add-btn ion-icon {
+  color: white;
+  font-size: 28px;
 }
