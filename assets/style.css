@@ -122,7 +122,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+  box-shadow: 0 8px 20px rgba(70, 130, 180, 0.4);
 }
 
 .add-btn ion-icon {

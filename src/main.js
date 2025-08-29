@@ -8,6 +8,7 @@ import { renderNotes } from './dom.js';
 const saved = loadFromStorage('notes');
 const notesApp = createNotesApp();
 
+notesApp.addNote("Meeting", "Meet with clients for the Requirements", "Office");
 // Jika ada data simpan, isi ke aplikasi
 if (saved) {
   saved.forEach(note => notesApp.addNote(note.title, note.content, note.category));

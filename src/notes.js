@@ -3,8 +3,18 @@ function createNotesApp() {
 
   function addNote(title, content, category = "General") {
     // Buat objek catatan baru dengan id unik
+    const note = {
+      id: Date.now(),
+      title,
+      content,
+      category,
+      starred: false,
+      createdAt: new Date().toISOString()
+    };
     // Tambahkan ke array `notes`
+    notes.push(note);
     // Kembalikan catatan yang ditambahkan
+    return note
   }
 
   function deleteNote(id) {
