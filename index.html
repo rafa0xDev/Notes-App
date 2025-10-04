@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
-    <title>Notes-App</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Notes</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-    <header class="container-header">
-        <div class="title-container">
-            <span class="title">
-                <h1>My Notes</h1>
-                <p>Your daily notes that reminds you</p>
-            </span>
-            <span class="notification-icon">
-                <ion-icon name="notifications-outline"></ion-icon>
-            </span>
-        </div>
-        <span class="search-container">
-            <input type="text" class="search-input" placeholder="Search notes...">
-            <ion-icon name="search-outline" class="search-icon"></ion-icon>
-        </span>
-        <nav class="nav-category">
-            <ul>
-                <li><a href="#">All Notes</a></li>
-                <li><a href="#">Office</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container-main">
-        <!-- main here -->
-        <div class="notes-container">
-            
-        </div>
-    </main>
-    <footer class="nav-footer">
-        <ul>
-            <nav class="bottom-nav">
-                <a href="#"><ion-icon name="pencil-outline"></ion-icon></a>
-                <a href="#"><ion-icon name="list-outline"></ion-icon></a>
-                <button href="#" class="add-btn">
-                    <ion-icon name="add-circle"></ion-icon>
-                </button>
-                <a href="#"><ion-icon name="grid-outline"></ion-icon></a>
-                <a href="#"><ion-icon name="person-outline"></ion-icon></a>
-            </nav>
-        </ul>
-    </footer>
+  <header class="container-header">
+    <div class="title-container">
+      <span class="title">
+        <h1>My Notes</h1>
+        <p>Your daily notes that reminds you</p>
+      </span>
+      <span class="notification-icon">
+        <ion-icon name="notifications-outline"></ion-icon>
+      </span>
+    </div>
+    <span class="search-container">
+      <input type="text" class="search-input" placeholder="Search notes..." />
+      <ion-icon name="search-outline" class="search-icon"></ion-icon>
+    </span>
+    <nav class="nav-category">
+      <ul>
+        <li><a href="#">All Notes</a></li>
+        <li><a href="#">Office</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="./src/main.js"></script>
+  <main class="container-main">
+    <div class="notes-container" id="notesContainer">
+      <!-- Catatan akan muncul di sini -->
+    </div>
+  </main>
+
+  <footer class="nav-footer">
+    <nav class="bottom-nav">
+      <a href="#"><ion-icon name="pencil-outline"></ion-icon></a>
+      <a href="#"><ion-icon name="list-outline"></ion-icon></a>
+      <button class="add-btn" id="addNoteBtn" type="submit">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+      <a href="#"><ion-icon name="grid-outline"></ion-icon></a>
+      <a href="#"><ion-icon name="person-outline"></ion-icon></a>
+    </nav>
+  </footer>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Main JS (modul) -->
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
