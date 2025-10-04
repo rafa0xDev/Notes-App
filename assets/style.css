@@ -117,6 +117,7 @@ body {
   top: -20px;
   background: skyblue;
   border-radius: 50%;
+  border: none;
   width: 50px;
   height: 50px;
   display: flex;
@@ -125,7 +126,14 @@ body {
   box-shadow: 0 8px 20px rgba(70, 130, 180, 0.4);
 }
 
+.add-btn:active {
+  box-shadow: 0 4px 10px rgba(70, 130, 180, 0.4);
+  transform: translateY(2px);
+}
+
 .add-btn ion-icon {
   color: white;
   font-size: 28px;
 }
+
+/*color random*/
