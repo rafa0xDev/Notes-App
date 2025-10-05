@@ -261,6 +261,7 @@ body {
 .add-btn ion-icon {
   color: white;
   font-size: 30px;
+  pointer-events: none;
 }
 
 /* ========== ANIMATIONS ========== */
