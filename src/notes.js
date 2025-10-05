@@ -1,12 +1,9 @@
 const warna = [
-  "#FFB6C1", 
-  "#FFA07A", 
-  "#98FB98", 
-  "#87CEFA", 
-  "#DDA0DD", 
-  "#F0E68C", 
-  "#FFD700", 
-  "#FF6347"
+  "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+  "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+  "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
+  "linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)",
+  "linear-gradient(135deg, #fddb92 0%, #d1fdff 100%)"
 ];
 
 function getRandomWarna() {
