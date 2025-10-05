@@ -6,6 +6,14 @@ import { createNoteElement } from "./notes";
 
 let isFormOpen = false;
 
+const container = getNotesContainer();
+container.addEventListener('click', (e) => {
+  if(e.target.classList.contains('delete-btn')) {
+    const noteItem = e.target.closest('.note-item');
+    noteItem.remove();
+  }
+});
+
 getAddBtn().addEventListener('click', (e) => {
   if(isFormOpen) return; // Cegah multiple form
   isFormOpen = true;
@@ -27,4 +35,5 @@ getAddBtn().addEventListener('click', (e) => {
     isFormOpen = false;
   });
 });
+
 
