@@ -23,8 +23,10 @@ function createNoteElement(title, desc) {
   note.innerHTML =  `
     <div class="note-header">
       <span class="note-date">${date}</span>
-      <ion-icon name="trash-outline" class="delete-btn"></ion-icon>
-      <ion-icon name="star-outline"></ion-icon>
+      <span class="note-actions">
+        <ion-icon name="trash-outline" class="delete-btn"></ion-icon>
+        <ion-icon name="star-outline"></ion-icon>
+      </span>
     </div>
     <h3>${title}</h3>
     <p>${desc}</p>
