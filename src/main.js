@@ -1,8 +1,8 @@
-import { getAddBtn } from "./dom";
-import { getNotesContainer } from "./dom";  
-import { createForm } from "./dom";
-import { removeForm } from "./dom";
-import { createNoteElement } from "./notes";
+import { getAddBtn } from "./dom.js";
+import { getNotesContainer } from "./dom.js";  
+import { createForm } from "./dom.js";
+import { removeForm } from "./dom.js";
+import { createNoteElement } from "./notes.js";
 
 let isFormOpen = false;
 
@@ -29,7 +29,6 @@ getAddBtn().addEventListener('click', (e) => {
       return;
     }
     const elementNote = createNoteElement(title, desc);
-    const container = getNotesContainer();
     container.prepend(elementNote);
     removeForm();
     isFormOpen = false;

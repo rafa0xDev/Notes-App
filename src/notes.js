@@ -29,6 +29,8 @@ function createNoteElement(title, desc) {
     <h3>${title}</h3>
     <p>${desc}</p>
   `;
+  const noteId = Date.now().toString();
+  note.setAttribute('data-id', noteId); 
   return note;
 }
 
